@@ -152,7 +152,7 @@ StScrollBar StButton#vhandle:hover
 .menu {
   background-color: #fff;
   border: solid 4px black;
-  border-image: url('popupmenu.png') 8 8 8 8;
+  border-image: url('menu/popupmenu.png') 8 8 8 8;
   color: #000;
   font-size: 9pt;
 }
@@ -248,11 +248,11 @@ StScrollBar StButton#vhandle:hover
 }
 
 .toggle-switch-us, .toggle-switch-intl {
-  background-image: url("checkbox-off.png");
+  background-image: url('checkbox/checkbox-off.png');
 }
 
 .toggle-switch-us:checked, .toggle-switch-intl:checked {
-  background-image: url("checkbox.png");
+  background-image: url('checkbox/checkbox.png');
 }
 
 .nm-menu-item-icons {
@@ -268,14 +268,14 @@ StScrollBar StButton#vhandle:hover
   text-shadow: black 0px 1px 1px;
   background-color: #013c6b;
   font-size: 9pt;
-  border-image: url('panel.png') 80 0 0 0;
+  border-image: url('panel/panel.png') 80 0 0 0;
   font-weight: normal;
   height: 30px;
   outline: 1px rgba(0,0,0,1);
 }
 
 #panelLeft .applet-box:first-child {
-  border-image: url('menu-box.png') 7 0 0 0;
+  border-image: url('panel/menu-box.png') 7 0 0 0;
   border-right-width: 10px;
   font-size: 12pt;
   font-style: italic;
@@ -283,11 +283,11 @@ StScrollBar StButton#vhandle:hover
 }
 
 #panelLeft .applet-box:first-child:hover {
-  border-image: url('menu-hover.png') 7 0 0 0;
+  border-image: url('panel/menu-hover.png') 7 0 0 0;
 }
 
 #panelLeft .applet-box:first-child:active {
-  border-image: url('menu-active.png') 7 0 0 0;
+  border-image: url('panel/menu-active.png') 7 0 0 0;
 }
 
 #panelLeft, #panelCenter {
@@ -295,7 +295,7 @@ StScrollBar StButton#vhandle:hover
 }
 
 #panelRight {
-  border-image: url('panel-right.png') 7 0 0 0;
+  border-image: url('panel/panel-right.png') 7 0 0 0;
 
 }
 
@@ -470,19 +470,19 @@ StScrollBar StButton#vhandle:hover
 }
 
 .workspace-add-button {
-  background-image: url("add-workspace.png");
+  background-image: url('menu/add-workspace.png');
   height: 200px;
   width: 35px;
   transition-duration: 300;
 }
 
 .workspace-add-button:hover {
-  background-image: url("add-workspace-hover.png");
+  background-image: url('menu/add-workspace-panel/hover.png');
   transition-duration: 300;
 }
 
 .workspace-close-button {
-  background-image: url("close.png");
+  background-image: url('menu/close.png');
   height: 34px;
   width: 34px;
   -cinnamon-close-overlap: 20px;
@@ -490,7 +490,7 @@ StScrollBar StButton#vhandle:hover
 
 .window-close:hover,
 .window-close:active {
-  background-image: url("close-hover.png");
+  background-image: url('menu/close-panel/hover.png');
 }
 
 
@@ -508,7 +508,7 @@ StScrollBar StButton#vhandle:hover
 }
 
 .window-close {
-  background-image: url("close.png");
+  background-image: url('menu/close.png');
   height: 34px;
   width: 34px;
   -cinnamon-close-overlap: 20px;
@@ -519,7 +519,7 @@ StScrollBar StButton#vhandle:hover
 }
 
 .window-close-area {
-  background-image: url("trash-icon.png");
+  background-image: url('menu/trash-icon.png');
   background-color: rgba(0, 0, 0, 0.8);
   border: 2px solid #399cee;
   border-bottom: 0px;
@@ -761,13 +761,13 @@ StScrollBar StButton#vhandle:hover
 .calendar-change-month-back {
   width: 18px;
   height: 12px;
-  background-image: url("calendar-arrow-left.svg");
+  background-image: url('menu/calendar-arrow-left.svg');
   border-radius: 4px;
   border: 1px solid rgba(0,0,0,0);
 }
 
 .calendar-change-month-back:rtl {
-  background-image: url("calendar-arrow-right.svg");
+  background-image: url('menu/calendar-arrow-right.svg');
 }
 
 .calendar-change-month-back:hover {
@@ -780,13 +780,13 @@ StScrollBar StButton#vhandle:hover
 .calendar-change-month-forward {
   width: 18px;
   height: 12px;
-  background-image: url("calendar-arrow-right.svg");
+  background-image: url('menu/calendar-arrow-right.svg');
   border-radius: 4px;
   border: 1px solid rgba(0,0,0,0);
 }
 
 .calendar-change-month-forward:rtl {
-  background-image: url("calendar-arrow-left.svg");
+  background-image: url('menu/calendar-arrow-left.svg');
 }
 
 .calendar-change-month-forward:hover {
@@ -1015,7 +1015,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
   border: solid 1px black;
   box-shadow: 2px solid rgba(0,0,0,0.4) 2px 2px;
   color: black;
-  border-image: url('tab.png') 4 4 4 4;
+  border-image: url('menu/tab.png') 4 4 4 4;
 }
 
 .switcher-list-item-container {
@@ -1112,51 +1112,6 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 }
 
 /* ===================================================================
-* Modal dialogs
-* ===================================================================*/
-
-.modal-dialog {
-  font-size: 10pt;
-  border-radius: 2px;
-  background-color: #171717;
-  border: 2px solid #404040;
-  border-image: url('popupmenu.png') 4;
-  color: #000;
-  padding-right: 42px;
-  padding-left: 42px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
-
-.modal-dialog-button-box {
-  spacing: 21px;
-}
-
-.modal-dialog-button {
-  font-size: 10pt;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 4px 32px 5px;
-}
-
-.modal-dialog-button:hover {
-}
-
-.modal-dialog-button:active,
-.modal-dialog-button:checked {
-  color: black;
-  border-image: url('buttons/button-focused-pressed.png') 5;
-}
-
-.modal-dialog-button:disabled {
-  color: rgb(60, 60, 60);
-}
-
-.modal-dialog-button:focus {
-  padding: 3px 31px 4px;
-}
-
-/* ===================================================================
 * Run dialog
 * ===================================================================*/
 
@@ -1202,7 +1157,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
   padding-bottom: 15px;
   padding-top: 15px;
   color: black;
-  border-image: url('tab.png') 4 4 4 4;
+  border-image: url('menu/tab.png') 4 4 4 4;
 }
 
 .lightbox {
@@ -1350,6 +1305,116 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 }
 .show-processes-dialog-app-list-item-name {
   font-size: 10pt;
+}
+
+/* ===================================================================
+* Modal dialogs (modalDialog.js)
+* ===================================================================*/
+
+.modal-dialog {
+  font-size: 10pt;
+  border-radius: 2px;
+  background-color: #171717;
+  border: 2px solid #404040;
+  border-image: url('menu/popupmenu.png') 4;
+  color: #000;
+  padding-right: 42px;
+  padding-left: 42px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.modal-dialog-button-box {
+  spacing: 21px;
+}
+
+.modal-dialog-button {
+  font-size: 10pt;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 4px 32px 5px;
+}
+
+.modal-dialog-button:hover {
+}
+
+.modal-dialog-button:active,
+.modal-dialog-button:checked {
+  color: black;
+  border-image: url('buttons/button-pressed.png') 5;
+}
+
+.modal-dialog-button:disabled {
+  color: rgb(60, 60, 60);
+}
+
+.modal-dialog-button:focus {
+  padding: 3px 31px 4px;
+}
+
+/* ===================================================================
+ * dialogs (dialog.js)
+ * ===================================================================*/
+.dialog {
+  border-image: url('menu/popupmenu.png') 6;
+  color: #3c3c3e;
+  background-color: #F5F5F7;
+    padding: 20px;
+    border: 1px;
+    border-color: black;
+}
+
+.dialog-button-box {
+}
+
+.dialog-button {
+    height: 22px;
+    color: rgb(70, 70, 70);
+    border-image: url('buttons/button.png') 5;
+    padding: 3px 31px 4px;
+}
+
+.dialog-button:hover {
+    border-image: url('buttons/button-hover.png') 5;
+}
+
+.dialog-button:focus {
+    border-image: url('buttons/button-focused.png') 5;
+    padding: 3px 31px 4px;
+}
+
+.dialog-button:active,
+.dialog-button:checked {
+    border-image: url('buttons/button-pressed.png') 5;
+    color: white;
+}
+
+.dialog-button:focus:hover {
+    border-image: url('buttons/button-focused-prelight.png') 5;
+    padding: 3px 31px 4px;
+}
+
+.dialog-button:focus:checked,
+.dialog-button:focus:active {
+    border-image: url('buttons/button-pressed.png') 5;
+}
+
+.dialog-button:disabled {
+    color: #a6a6a6;
+}
+
+.dialog-button:destructive-action {
+    color: #c21616;
+}
+
+.dialog-list .dialog-list-title {
+    padding: 1.3em;
+    text-align: center;
+    color: rgb(70, 70, 70);
+}
+
+.dialog-list-item .dialog-list-item-description {
+    color: rgb(70, 70, 70);
 }
 
 /* ===================================================================
@@ -1560,13 +1625,13 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
   padding: 0px;
   background-color: transparent;
   border-radius: 0px;
-  border-image: url('favs.png') 5 5 5 5;
+  border-image: url('menu/favs.png') 5 5 5 5;
   width: 70%;
 }
 
 .menu-background {
   border: solid 1px transparent;
-  border-image: url("menu-bg.png") 8 8 56 41;
+  border-image: url('menu/menu-bg.png') 8 8 56 41;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
   padding: 55px 1px 10px 1px;
 }
@@ -1598,7 +1663,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
   padding: 10px 0px 0px 10px;
   background-color: transparent;
   border: none;
-  /*    border-image: url('favs.png') 5 5 5 5;*/
+  /*    border-image: url('menu/favs.png') 5 5 5 5;*/
 }
 
 .menu-applications-inner-box {
@@ -1621,17 +1686,17 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
   background: none;
   border-width: 0px;
   box-shadow: none;
-  border-image: url('trough-scrollbar-vert.png') 1;
+  border-image: url('menu/trough-scrollbar-vert.png') 1;
 }
 
 .menu-applications-box StButton#vhandle {
-  border-image: url('slider-vert.png') 3;
-  background: url('handle-vert.png') no-repeat center center;
+  border-image: url('menu/slider-vert.png') 3;
+  background: url('menu/handle-vert.png') no-repeat center center;
 }
 
 .menu-applications-box StButton#vhandle:hover {
-  border-image: url('slider-vert-hover.png') 3;
-  background: url('handle-vert.png') no-repeat center center;
+  border-image: url('menu/slider-vert-panel/hover.png') 3;
+  background: url('menu/handle-vert.png') no-repeat center center;
 }
 
 .menu-application-button {
@@ -1738,7 +1803,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 }
 
 .window-list-item-box {
-  border-image: url('normal.png');
+  border-image: url('panel/normal.png');
   padding: 1px;
   transition-duration: 100;
 }
@@ -1746,27 +1811,27 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .window-list-item-box:active,
 .window-list-item-box:checked,
 .window-list-item-box:focus    {
-  border-image: url('active.png');
+  border-image: url('panel/active.png');
 }
 
 
 .window-list-item-box:hover  {
-  border-image: url('hover.png');
+  border-image: url('panel/hover.png');
 }
 
 .window-list-item-box:focus:hover  {
-  border-image: url('active-hover.png');
+  border-image: url('panel/active-hover.png');
 }
 
 .window-list-item-demands-attention {
-  border-image: url('urgent.png');
+  border-image: url('panel/urgent.png');
 }
 
 /* https://github.com/B00merang-Project/Windows-XP/issues/44 */
 .grouped-window-list-thumbnail-menu {
   spacing: 6px;
   padding: 6px 12px 12px 12px;
-  border-image: url("menu-bottom.png") 6;
+  border-image: url('panel/menu-bottom.png') 6;
   color: #ffffff;
 }
 
@@ -1779,40 +1844,40 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 }
 
 .grouped-window-list-item-box:hover {
-  border-image: url("hover.png") 4;
+  border-image: url('panel/hover.png') 4;
   transition-duration: 100;
 }
 
 .grouped-window-list-item-box:active,
 .grouped-window-list-item-box:checked {
-  border-image: url("normal.png") 4;
+  border-image: url('panel/normal.png') 4;
   transition-duration: 100;
 }
 
 .grouped-window-list-item-box:active:hover,
 .grouped-window-list-item-box:checked:hover {
-  border-image: url("hover.png") 8;
+  border-image: url('panel/hover.png') 8;
   transition-duration: 100;
 }
 
 .grouped-window-list-item-box:focus {
-  border-image: url("active.png") 8;
+  border-image: url('panel/active.png') 8;
   transition-duration: 100;
 }
 
 .grouped-window-list-item-box:focus:hover {
-  border-image: url("active-hover.png") 8;
+  border-image: url('panel/active-hover.png') 8;
   transition-duration: 100;
 }
 
 .grouped-window-list-item-demands-attention {
   font-weight: normal;
-  border-image: url("urgent.png") 4;
+  border-image: url('panel/urgent.png') 4;
   transition-duration: 100;
 }
 
 .grouped-window-list-item-attention:hover {
-  border-image: url("urgent.png") 4;
+  border-image: url('panel/urgent.png') 4;
 }
 
 .window-list-item-box .progress,
@@ -1824,7 +1889,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .window-list-preview {
   spacing: 6px;
   color: #000000;
-  border-image: url('popupmenu.png') 8 8 8 8;
+  border-image: url('menu/popupmenu.png') 8 8 8 8;
   border-radius: 0;
   padding: 6px 12px 12px 12px;
   font-size: 1em;
@@ -1961,78 +2026,26 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 /* ===================================================================
 * Panel Launchers Applet (panelLaunchers.js)
 * ===================================================================*/
-
-#panel-launchers-box {
-
+.panel-launchers .launcher {
+    border: 1px solid transparent;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
-.panel-launcher {
-  margin: 1px;
-  padding: 3px;
+.panel-launchers .launcher:hover {
+    border-image: url('panel/solid3.png') 4 2 4 2 stretch;
 }
 
-.panel-launcher:hover {
-  background-color: rgba(0,0,0,0.5);
-}
-
-.panel-launcher-add-dialog-content-box {
-  padding: 6px;
-  spacing: 20px;
-}
-
-.panel-launcher-add-dialog-content-box-left {
-  padding: 6px;
-  spacing: 20px;
-}
-
-.panel-launcher-add-dialog-content-box-right {
-  padding: 6px;
-  spacing: 10px;
-}
-
-.panel-launcher-add-dialog-entry {
-  padding: 5px;
-  border-radius: 4px;
-  color: rgb(50, 50, 50);
-  border: 1px solid rgba(245,245,245,0.2);
-  background-gradient-start: rgba(200,200,200,0.5);
-  background-gradient-end: rgba(254,254,254,0.5);
-  background-gradient-direction: vertical;
-  box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.5);
-  selected-color: black;
-  caret-color: rgb(128, 128, 128);
-  caret-size: 1px;
-  width: 250px;
-  transition-duration: 300;
-}
-
-.panel-launcher-add-dialog-entry:focus,
-.panel-launcher-add-dialog-entry:hover {
-  border: 1px solid rgba(120,120,120,1);
-  background-gradient-start: rgb(200,200,200);
-  background-gradient-end: white;
-  background-gradient-direction: vertical;
-}
-
-.panel-launcher-add-dialog-entry:hover {
-  transition-duration: 300;
-}
-
-.panel-launcher-add-dialog-entry:focus {
-  color: rgb(64, 64, 64);
-  font-weight: bold;
-  transition-duration: 0;
-}
 
 /* ===================================================================
 * Overview corner
 * ===================================================================*/
 #overview-corner {
-  background-image: url("overview.png");
+  background-image: url('menu/overview.png');
 }
 
 #overview-corner:hover {
-  background-image:  url("overview-hover.png");
+  background-image:  url('menu/overview-panel/hover.png');
 }
 
 /* ===================================================================
@@ -2149,19 +2162,19 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .check-box StBin {
   width: 24px;
   height: 18px;
-  background-image: url("checkbox-off.png");
+  background-image: url('checkbox/checkbox-off.png');
 }
 
 .check-box:focus StBin {
-  background-image: url("checkbox-off-focus.png");
+  background-image: url('checkbox/checkbox-off-focus.png');
 }
 
 .check-box:checked StBin {
-  background-image: url("checkbox.png");
+  background-image: url('checkbox/checkbox.png');
 }
 
 .check-box:focus:checked StBin {
-  background-image: url("checkbox-focus.png");
+  background-image: url('checkbox/checkbox-focus.png');
 }
 
 .check-box StLabel {
@@ -2177,20 +2190,20 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .radiobutton StBin {
   width: 22px;
   height: 22px;
-  background-image: url("radio-unselected.png");
+  background-image: url('checkbox/radio-unselected.png');
   border-radius: 15px;
 }
 
 .radiobutton:focus StBin {
-  background-image: url("radio-unselected.png");
+  background-image: url('checkbox/radio-unselected.png');
 }
 
 .radiobutton:checked StBin {
-  background-image: url("radio-selected.png");
+  background-image: url('checkbox/radio-selected.png');
 }
 
 .radiobutton:focus:checked StBin {
-  background-image: url("radio-selected.png");
+  background-image: url('checkbox/radio-selected.png');
 }
 
 .radiobutton StLabel {
@@ -2282,7 +2295,7 @@ The colour parameters are red, green, blue, and transparency or a name */
 }
 .starkmenu-background {
   border: solid 1px transparent;
-  border-image: url("menu-bg.png") 8 8 56 41;
+  border-image: url('menu/menu-bg.png') 8 8 56 41;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
   padding: 54px 1px 29px 1px;
 }

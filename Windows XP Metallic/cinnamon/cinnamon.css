@@ -4,6 +4,7 @@
 * ###################################################################*/
 stage {
   font-family: Noto Sans, sans-serif;
+  color: black;
 }
 
 .cinnamon-link {
@@ -19,6 +20,9 @@ stage {
   color: rgba(0,0,0,0.5);
 }
 
+/* ===================================================================
+ * Scrollbars
+ * ===================================================================*/
 StScrollView.vfade {
   -st-vfade-offset: 0px;
 }
@@ -51,7 +55,9 @@ StScrollBar StButton#vhandle:hover {
   background: url('menu/handle-vert.png') no-repeat center center;
 }
 
-
+/* ===================================================================
+ * Tooltip
+ * ===================================================================*/
 #Tooltip {
   border: 1px solid black;
   border-radius: 0px;
@@ -231,7 +237,9 @@ StScrollBar StButton#vhandle:hover {
   icon-size: 1.14em;
 }
 
-/* Switches (to be used in menus) */
+/* ===================================================================
+ * Switches (to be used in menus)
+ * ===================================================================*/
 .toggle-switch {
   width: 52px;
   height: 18px;
@@ -601,7 +609,9 @@ StScrollBar StButton#vhandle:hover {
   background-color: rgba(57,156,238,.31);
 }
 
-
+/* ===================================================================
+* Clock Desklet (desklet.js)
+* ===================================================================*/
 .clock-desklet-label {
 }
 
@@ -621,13 +631,6 @@ StScrollBar StButton#vhandle:hover {
   background-color: none;
   border-radius: 0px;
 }
-
-/* ===================================================================
-* Clock Desklet (desklet.js)
-* ===================================================================*/
-.clock-desklet-label {
-}
-
 
 /* ===================================================================
 * Looking Glass
@@ -1829,7 +1832,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 
 /* experimental support for grouped window list */
 .grouped-window-list-item-box {
-  color: #ffffff;
+  color: black;
   font-weight: normal;
   border-image: none;
   transition-duration: 100;

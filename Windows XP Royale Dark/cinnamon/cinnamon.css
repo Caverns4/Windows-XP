@@ -266,34 +266,15 @@ StScrollBar StButton#vhandle:hover
 }
 
 /* ===================================================================
-* Panel (panel.js)
-* ===================================================================*/
-
+ * Panel (panel.js)
+ * ===================================================================*/
 #panel {
-  color: #ffffff;
-  text-shadow: black 0px 1px 1px;
+  color: #white;
   background-color: #013c6b;
   font-size: 9pt;
   border-image: url('panel/panel.png') 80 0 0 0;
   font-weight: normal;
   height: 30px;
-  outline: 1px rgba(0,0,0,1);
-}
-
-#panelLeft .applet-box:first-child {
-  border-image: url('panel/menu-box.png') 7 0 0 0;
-  border-right-width: 10px;
-  font-size: 12pt;
-  font-style: italic;
-  font-weight: bold;
-}
-
-#panelLeft .applet-box:first-child:hover {
-  border-image: url('panel/menu-hover.png') 7 0 0 0;
-}
-
-#panelLeft .applet-box:first-child:active {
-  border-image: url('panel/menu-active.png') 7 0 0 0;
 }
 
 #panelLeft, #panelCenter {
@@ -302,7 +283,29 @@ StScrollBar StButton#vhandle:hover
 
 #panelRight {
   border-image: url('panel/panel-right.png') 7 0 0 0;
+}
 
+#panelLeft .applet-box:first-child {
+  border-image: url('panel/menu-box.png') 7 0 0 0;
+  padding-right: 20px;
+}
+
+/* TODO: Tahoma is used for most things, but this looks a little off.*/
+#panelLeft .applet-box:first-child .applet-label {
+ color: white;
+  font-family: tahoma;
+  font-size: 15pt;
+  font-style: italic;
+   font-weight: bold;
+  text-shadow: black 0px 1px 2px;
+}
+
+#panelLeft .applet-box:first-child:hover {
+  border-image: url('panel/menu-hover.png') 7 0 0 0;
+}
+
+#panelLeft .applet-box:first-child:active {
+  border-image: url('panel/menu-active.png') 7 0 0 0;
 }
 
 #panelLeft:dnd {
@@ -956,7 +959,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
   background-gradient-direction: horizontal;
   background-gradient-start: rgba(255, 255, 255, 0.1);
   background-gradient-end: rgba(255, 255, 255, 0);
-  color: #fff;
+  color: black;
 }
 .hotplug-resident-mount-label {
   color: inherit;
@@ -1166,8 +1169,8 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 }
 
 /* ===================================================================
-* End session dialog
-* ===================================================================*/
+* CinnamonMountOperation Dialogs
+ * ===================================================================*/
 
 .end-session-dialog {
   spacing: 42px;
@@ -2060,31 +2063,25 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
   background: rgba(0,0,0,0.5);
 }
 
+.applet-label {
+  color: white;
+}
+
 .applet-box {
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 2px;
+  padding-right: 2px;
+  color: white;
   transition-duration: 300;
 }
 .applet-box:hover {
   background-color: rgba(25,25,25,0.2);
-  color:  white;
+  color: white;
   transition-duration: 100;
 }
 .applet-box:active {
-  background-color: transparent;
-  color:  white;
-  transition-duration: 100;
-
-}
-
-.applet-label:not(:first-child) {
-  font-weight: normal;
-}
-
-.applet-label,
-.applet-label:hover,
-.applet-box:hover > .applet-label {
+  background-color: rgba(25,25,25,0.4);
   color: white;
+  transition-duration: 100;
 }
 
 .applet-icon {
@@ -2093,7 +2090,6 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 
 .applet-icon:hover,
 .applet-box:hover > .applet-icon {
-
 }
 
 /* ===================================================================

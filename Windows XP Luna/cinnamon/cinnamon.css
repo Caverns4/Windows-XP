@@ -281,13 +281,17 @@ StScrollBar StButton#vhandle:hover {
 
 #panelLeft .applet-box:first-child {
   border-image: url('panel/menu-box.png') 7 0 0 0;
-  border-right-width: 10px;
-  text-shadow: black 0px 1px 1px;
-  font-size: 12pt;
-  font-style: italic;
-  font-weight: bold;
+  padding-right: 20px;
+}
+
+/* TODO: Tahoma is used for most things, but this looks a little off.*/
+#panelLeft .applet-box:first-child .applet-label {
+ color: white;
   font-family: tahoma;
-  padding-right: 15px;
+  font-size: 15pt;
+  font-style: italic;
+   font-weight: bold;
+  text-shadow: black 0px 1px 2px;
 }
 
 #panelLeft .applet-box:first-child:hover {
@@ -1201,8 +1205,8 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 }
 
 /* ===================================================================
-* End session dialog
-* ===================================================================*/
+* CinnamonMountOperation Dialogs
+ * ===================================================================*/
 
 .end-session-dialog {
   spacing: 42px;
@@ -2149,31 +2153,25 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
   background: rgba(0,0,0,0.5);
 }
 
+.applet-label {
+  color: white;
+}
+
 .applet-box {
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 2px;
+  padding-right: 2px;
+  color: white;
   transition-duration: 300;
 }
 .applet-box:hover {
   background-color: rgba(25,25,25,0.2);
-  color:  white;
+  color: white;
   transition-duration: 100;
 }
 .applet-box:active {
   background-color: rgba(25,25,25,0.4);
-  color:  white;
-  transition-duration: 100;
-
-}
-
-.applet-label:not(:first-child) {
-  font-weight: normal;
-}
-
-.applet-label,
-.applet-label:hover,
-.applet-box:hover > .applet-label {
   color: white;
+  transition-duration: 100;
 }
 
 .applet-icon {
@@ -2182,7 +2180,6 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 
 .applet-icon:hover,
 .applet-box:hover > .applet-icon {
-
 }
 
 /* ===================================================================

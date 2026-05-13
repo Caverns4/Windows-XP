@@ -280,17 +280,17 @@ StScrollBar StButton#vhandle:hover {
 
 #panelLeft .applet-box:first-child {
   border-image: url('panel/menu-box.png') 7 0 0 0;
-  border-right-width: 10px;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
+/* TODO: Tahoma is used for most things, but this looks a little off.*/
 #panelLeft .applet-box:first-child .applet-label {
-  color: white;
-  text-shadow: 1px 1px black;
-  font-size: 12pt;
-  font-style: italic;
-  font-weight: bold;
+ color: white;
   font-family: tahoma;
+  font-size: 15pt;
+  font-style: italic;
+   font-weight: bold;
+  text-shadow: black 0px 1px 2px;
 }
 
 #panelLeft .applet-box:first-child:hover {
@@ -1157,8 +1157,8 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 }
 
 /* ===================================================================
-* End session dialog
-* ===================================================================*/
+* CinnamonMountOperation Dialogs
+ * ===================================================================*/
 
 .end-session-dialog {
   spacing: 42px;
@@ -2106,9 +2106,14 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
   background: rgba(0,0,0,0.5);
 }
 
+.applet-label {
+  color: black;
+}
+
 .applet-box {
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 2px;
+  padding-right: 2px;
+  color: black;
   transition-duration: 300;
 }
 .applet-box:hover {
@@ -2122,24 +2127,12 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
   transition-duration: 100;
 }
 
-.applet-label:not(:first-child) {
-  font-weight: normal;
-}
-
-/* avoid having black text on start */
-.applet-label,
-.applet-label:hover,
-.applet-box:hover > .applet-label {
-  color: black;
-}
-
 .applet-icon {
   icon-size: 1.3em;
 }
 
 .applet-icon:hover,
 .applet-box:hover > .applet-icon {
-
 }
 
 /* ===================================================================

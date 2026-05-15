@@ -1119,14 +1119,29 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
  * Run dialog
  * ===================================================================*/
 
+.run-dialog-label {
+  font-size: 8pt;
+  color: black;
+}
+
+.run-dialog-error-label {
+  font-size: 8pt;
+  color: black;
+}
+
+.run-dialog-error-box {
+  padding-top: 15px;
+  spacing: 5px;
+}
+
 .run-dialog-description {
     text-align: center;
     color: rgb(70, 70, 70);
 }
 
 .run-dialog-entry {
-  color: white;
-  caret-color: white;
+  color: black;
+  caret-color: black;
   caret-size: 1px;
   selected-color: white;
   selection-background-color: #4080FB;
@@ -1138,40 +1153,11 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
   background-gradient-direction: none;
   border-image: url('menu/entry.png') 4; 
 }
-
-/*.run-dialog-entry:focus {
-    padding: 4px 12px;
-    color: #2b2b2b;
-    border-image: url('misc-assets/entry-focus.png') 6;
-    border-radius: 4px;
-    width: 250px;
-    min-height: 16px;
-    selected-color: #fff;
-    caret-color: #2b2b2b;
-    caret-size: 1px;
-    selection-background-color: #6cabcd;
-    transition-duration: 150;
-}*/
-
-.run-dialog-label {
-  font-size: 1em;
-  font-weight: bold;
-  color: white;
-  padding-bottom: .8em;
-}
-
-.run-dialog-error-label {
-  color: #FF6767;
-}
-
-.run-dialog-error-box {
-  padding-top: 15px;
-  spacing: 5px;
-}
-
+/*.run-dialog-entry:focus {}*/
 .run-dialog-completion-box { 
   padding-left: 15px;
   font-size: 10px;
+  color: black;
 }
 
 .run-dialog {

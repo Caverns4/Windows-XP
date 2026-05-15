@@ -1005,12 +1005,12 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 * ===================================================================*/
 
 .run-dialog-label {
-  font-size: 9pt;
+  font-size: 8pt;
   color: black;
 }
 
 .run-dialog-error-label {
-  font-size: 9pt;
+  font-size: 8pt;
   color: black;
 }
 
@@ -1019,10 +1019,15 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
   spacing: 5px;
 }
 
+.run-dialog-description {
+    text-align: center;
+    color: rgb(70, 70, 70);
+}
+
 .run-dialog-entry {
   font-size: 10pt;
-  font-weight: normal;
-  background-color: white;
+  color: black;
+  caret-color: black;
   border: 1px solid gray;
   border-radius: 0;
   color: black;
@@ -1037,6 +1042,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .run-dialog-completion-box {
   padding-left: 15px;
   font-size: 10px;
+  color: black;
 }
 
 .run-dialog {
@@ -1046,7 +1052,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
   padding-bottom: 15px;
   padding-top: 15px;
   color: black;
-  border-image: url('tab.png') 4 4 4 4;
+  border-image: url('menu/tab.png') 4 4 4 4;
 }
 
 .lightbox {
